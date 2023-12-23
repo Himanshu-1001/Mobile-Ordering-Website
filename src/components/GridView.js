@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import Product from "./Product";
-
+import {useFilterContext} from "../context/filter_context"
 const GridView = ({ products }) => {
+  const { filter_products} = useFilterContext();
   return (
     <Wrapper className="section">
+      <div className="product-data">
+        <p className="product-count">{`${filter_products.length} Product Available`}</p>
+      </div>
       <div className="container grid grid-three-column">
         {products.map((curElem) => {
           return <Product key={curElem.id} {...curElem} />;
@@ -24,7 +28,14 @@ const Wrapper = styled.section`
   .grid {
     gap: 3.2rem;
   }
-
+  .product-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
   figure {
     width: auto;
     display: flex;
