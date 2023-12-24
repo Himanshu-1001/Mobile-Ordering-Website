@@ -1,25 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 
-const HeroSection = ({ myData }) => {
-  const { name } = myData;
-
+const HeroSection = () => {
   return (
     <Wrapper>
       <div className="container">
         <div className="grid grid-two-column">
           <div className="hero-section-data">
             <p className="intro-data">Welcome to </p>
-            <h1> {name} </h1>
+            <h1> Mobi Planet </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
               atque temporibus veniam doloribus libero ad error omnis voluptates
               animi! Suscipit sapiente.
             </p>
-            <NavLink to = "/products">
-              <Button>show products </Button>
-            </NavLink>
+            <Link to = "/products">
+              <Button>Get products </Button>
+            </Link>
           </div>
           {/* our homepage image  */}
           <div className="hero-section-image">

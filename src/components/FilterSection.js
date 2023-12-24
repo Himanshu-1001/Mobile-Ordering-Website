@@ -163,7 +163,7 @@ const Wrapper = styled.section`
 
       button {
         border: none;
-        background-color: ${({ theme }) => theme.colors.white};
+        background-color: ${({ theme }) => theme.colors.blue};
         text-transform: capitalize;
         cursor: pointer;
 

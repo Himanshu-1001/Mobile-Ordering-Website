@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
@@ -19,11 +19,11 @@ const Footer = () => {
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>
-              <form action="#">
+              {/* <form action="#">
                 <input type="email" name="email" placeholder="YOUR E-MAIL" />
 
                 <input type="submit" value="subscribe" />
-              </form>
+              </form> */}
             </div>
             <div className="footer-social">
               <h3>Follow Us</h3>
@@ -80,7 +80,7 @@ const Wrapper = styled.section`
     max-width: 60vw;
     margin: auto;
     padding: 5rem 10rem;
-    background-color: ${({ theme }) => theme.colors.bg};
+    background-color: ${({ theme }) => theme.colors.white};
     border-radius: 1rem;
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: translateY(50%);
@@ -93,9 +93,9 @@ const Wrapper = styled.section`
 
   footer {
     padding: 14rem 0 9rem 0;
-    background-color: ${({ theme }) => theme.colors.footer_bg};
+    background-color: ${({ theme }) => theme.colors.black};
     h3 {
-      color: ${({ theme }) => theme.colors.hr};
+      color: ${({ theme }) => theme.colors.white};
       margin-bottom: 2.4rem;
     }
     p {
@@ -125,7 +125,7 @@ const Wrapper = styled.section`
 
     hr {
       margin-bottom: 2rem;
-      color: ${({ theme }) => theme.colors.hr};
+      color: ${({ theme }) => theme.colors.white};
       height: 0.1px;
     }
   }
