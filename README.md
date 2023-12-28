@@ -9,7 +9,7 @@ Developed responsive Mobile ordering website using ReactJS and Styled Components
 
 # Installation & Setup
 
-1: Clone the Project `git clone https://github.com/amandeep2326/Mobile-Ordering-Website.git`
+1: Clone the Project https://github.com/Himanshu-1001/Mobile-Ordering-Website.git
 
 2: Run `npm install`  command to install the necessary dependencies and Run the project `npm start`
    
